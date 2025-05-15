@@ -1,85 +1,27 @@
-# Brain Tumor Detection
+# DetectingBrainTumor
 
-This project uses deep learning to detect brain tumors from MRI images. It consists of a trained model and an API for making predictions.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
 
-## Overview
+## Development server
 
-The Brain Tumor Detection system analyzes MRI scans to identify the presence of brain tumors. The project includes:
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-- A trained deep learning model for tumor classification
-- A web API for making predictions
-- A user interface for uploading and analyzing MRI images
+## Code scaffolding
 
-## Installation
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### Prerequisites
+## Build
 
-- Python 3.7+
-- pip package manager
-- Git
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-### Setup Instructions
+## Running unit tests
 
-1. Clone the repository:
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-```bash
-git clone https://github.com/AbdellatifOsama/DetectingBrainTumor.git
-```
+## Running end-to-end tests
 
-2. Navigate to the project directory:
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-```bash
-cd DetectingBrainTumor
-```
+## Further help
 
-3. Install required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Download the pre-trained model:
-   
-   Download the model file from [this link](https://drive.google.com/file/d/1qzByxmy-opRlauigeF0TrFj01lSDqoW2/view?usp=sharing)
-
-5. Copy the downloaded model file to the API folder:
-
-```bash
-cp path/to/downloaded/model.h5 api/
-```
-
-## Usage
-
-### Running the API
-
-1. Navigate to the API directory:
-
-```bash
-cd api
-```
-
-2. Start the API server:
-
-```bash
-python app.py
-```
-
-3. The API will be available at `http://localhost:5000`
-
-### Making Predictions
-
-You can use the API to make predictions by sending POST requests with MRI images to the `/predict` endpoint.
-
-## Model Information
-
-The brain tumor detection model was trained on a dataset of MRI scans and can classify images into:
-- Normal brain tissue
-- Brain tumor present
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
